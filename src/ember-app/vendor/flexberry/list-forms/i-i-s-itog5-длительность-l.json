@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itog5-длительность-e",
+  "editForm": "i-i-s-itog5-длительность-e",
+  "external": false,
+  "caption": "Длительность",
+  "name": "IISItog5ДлительностьL",
+  "className": "ДлительностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog5-длительность",
+      "modelProjection": "ДлительностьL"
+    }
+  ]
+}

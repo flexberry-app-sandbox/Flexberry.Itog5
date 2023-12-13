@@ -1,0 +1,1 @@
+docker-compose -p itog5-java down

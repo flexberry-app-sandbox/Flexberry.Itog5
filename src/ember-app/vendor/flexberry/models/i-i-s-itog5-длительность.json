@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISItog5Длительность",
+  "modelName": "i-i-s-itog5-длительность",
+  "className": "Длительность",
+  "nameSpace": "IIS.Itog5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДлительностьE",
+      "modelName": "i-i-s-itog5-длительность",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДлительностьL",
+      "modelName": "i-i-s-itog5-длительность",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

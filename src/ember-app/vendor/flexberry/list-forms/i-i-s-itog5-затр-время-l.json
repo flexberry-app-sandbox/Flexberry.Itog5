@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-itog5-затр-время-e",
+  "editForm": "i-i-s-itog5-затр-время-e",
+  "external": false,
+  "caption": "Затр время",
+  "name": "IISItog5ЗатрВремяL",
+  "className": "ЗатрВремяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-itog5-затр-время",
+      "modelProjection": "ЗатрВремяL"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISItog5ЗатрВремя",
+  "modelName": "i-i-s-itog5-затр-время",
+  "className": "ЗатрВремя",
+  "nameSpace": "IIS.Itog5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗатрВремяE",
+      "modelName": "i-i-s-itog5-затр-время",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗатрВремяL",
+      "modelName": "i-i-s-itog5-затр-время",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

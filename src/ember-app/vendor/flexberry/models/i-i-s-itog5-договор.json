@@ -1,0 +1,336 @@
+﻿{
+  "name": "IISItog5Договор",
+  "modelName": "i-i-s-itog5-договор",
+  "className": "Договор",
+  "nameSpace": "IIS.Itog5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статус",
+      "type": "i-i-s-itog5-статус",
+      "flexberryType": "Статус",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "i-i-s-itog5-тип-договора",
+      "flexberryType": "ТипДоговора",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "дирОтдПоРабСКл",
+      "relatedTo": "i-i-s-itog5-дир-отд-по-раб-с-кл",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "длительность",
+      "relatedTo": "i-i-s-itog5-длительность",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-itog5-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДоговорE",
+      "modelName": "i-i-s-itog5-договор",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Длительность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "default",
+          "caption": "",
+          "name": "длительность",
+          "relatedTo": "i-i-s-itog5-длительность",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДирОтдПоРабСКл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "i-i-s-itog5-дир-отд-по-раб-с-кл",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 12
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 13
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 14
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-itog5-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ДоговорL",
+      "modelName": "i-i-s-itog5-договор",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Длительность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "default",
+          "caption": "",
+          "name": "длительность",
+          "relatedTo": "i-i-s-itog5-длительность",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДирОтдПоРабСКл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 9
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 10
+            }
+          ],
+          "index": 7,
+          "type": "default",
+          "caption": "",
+          "name": "дирОтдПоРабСКл",
+          "relatedTo": "i-i-s-itog5-дир-отд-по-раб-с-кл",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "",
+              "hidden": false,
+              "index": 12
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 13
+            },
+            {
+              "name": "отчество",
+              "caption": "",
+              "hidden": false,
+              "index": 14
+            }
+          ],
+          "index": 11,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-itog5-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
